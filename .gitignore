@@ -1,0 +1,32 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# IDE settings
+.vscode/
+
+# Sensitive Streamlit settings
+.streamlit/secrets.toml
+
+# Original datasets (avoid uploading large raw files)
+data/raw/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+# Keep only the final V3 training dataset
+data/processed/*
+!data/processed/multiclass_training_v3_train.csv
+
+# Keep only the final V3 model
+models/*
+!models/multiclass_random_forest_v3.pkl
